@@ -19,3 +19,4 @@
 - Use o sufixo "Entity" para classes de entidades mapeadas de banco de dados.
 - Use Mapstructs para converter models.
 - Na criação dos testes unitários não coloque os mocks no método anotado com @Beforeache, crie mocks para cada cenário de testes.
+- Use 'var' para variáveis de escopo local.

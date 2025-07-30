@@ -1,50 +1,40 @@
-## Micronaut 4.9.1 Documentation
+# Development Rules Documentation
 
-- [User Guide](https://docs.micronaut.io/4.9.1/guide/index.html)
-- [API Reference](https://docs.micronaut.io/4.9.1/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/4.9.1/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+Esta pasta contém as regras e diretrizes de desenvolvimento para o projeto Micronaut.
 
-- [Micronaut Maven Plugin documentation](https://micronaut-projects.github.io/micronaut-maven-plugin/latest/)
-## Feature micronaut-aot documentation
+## 📁 Arquivos Disponíveis
 
-- [Micronaut AOT documentation](https://micronaut-projects.github.io/micronaut-aot/latest/guide/)
+### 📋 [Memory Bank](./memory-bank.md)
+Documentação completa com todas as regras de desenvolvimento, incluindo:
+- Arquitetura e padrões de design
+- Stack tecnológica
+- Configuração do Maven
+- Organização e convenções de código
+- Diretrizes de teste
+- Documentação
+- Workflow de desenvolvimento
 
+### ⚡ [Rules - Quick Reference](./rules.md)
+Guia de referência rápida com:
+- Principais regras de arquitetura
+- Padrões de código com exemplos
+- Regras de teste
+- Ferramentas de qualidade
+- Checklist rápido para code review
 
-## Feature openapi documentation
+## 🎯 Como Usar
 
-- [Micronaut OpenAPI Support documentation](https://micronaut-projects.github.io/micronaut-openapi/latest/guide/index.html)
+1. **Para novos desenvolvedores**: Comece lendo o [Memory Bank](./memory-bank.md) para entender todas as regras
+2. **Para referência diária**: Use o [Rules - Quick Reference](./rules.md) durante o desenvolvimento
+3. **Para code review**: Use o checklist do arquivo de regras
 
-- [https://www.openapis.org](https://www.openapis.org)
+## 📝 Atualizações
 
+- Mantenha estes arquivos atualizados conforme as regras evoluem
+- Adicione novas regras conforme necessário
+- Documente mudanças significativas no processo de desenvolvimento
 
-## Feature maven-enforcer-plugin documentation
+## 🔗 Links Relacionados
 
-- [https://maven.apache.org/enforcer/maven-enforcer-plugin/](https://maven.apache.org/enforcer/maven-enforcer-plugin/)
-
-
-## Feature serialization-jackson documentation
-
-- [Micronaut Serialization Jackson Core documentation](https://micronaut-projects.github.io/micronaut-serialization/latest/guide/)
-
-
-## Feature swagger-ui documentation
-
-- [Micronaut Swagger UI documentation](https://micronaut-projects.github.io/micronaut-openapi/latest/guide/index.html)
-
-- [https://swagger.io/tools/swagger-ui/](https://swagger.io/tools/swagger-ui/)
-
-
-## Feature annotation-api documentation
-
-- [https://jakarta.ee/specifications/annotations/](https://jakarta.ee/specifications/annotations/)
-
-
-## Feature openapi-explorer documentation
-
-- [Micronaut OpenAPI Explorer View documentation](https://micronaut-projects.github.io/micronaut-openapi/latest/guide/#openapiExplorer)
-
-- [https://github.com/Authress-Engineering/openapi-explorer](https://github.com/Authress-Engineering/openapi-explorer)
-
-
+- [Prompt Original](../.cursor/my-first-prompt.md) - Regras originais em português
+- [README Principal](../../README.md) - Documentação geral do projeto 

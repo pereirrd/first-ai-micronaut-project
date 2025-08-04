@@ -16,7 +16,7 @@ public class FirstAiMicronautProjectController {
     @Get(uri="/ping", produces="application/json")
     public HttpResponse<PingPong> ping() {
         var ping = LocalDateTime.now();
-        var response = pingPongService.pingWithTimestamp(ping);
+        var response = pingPongService.create(ping);
         return HttpResponse.ok(response);
     }
 }

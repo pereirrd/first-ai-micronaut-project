@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 @Singleton
 public class PingPongService {
 
-    public PingPong pingWithTimestamp(LocalDateTime ping) {
+    public PingPong create(LocalDateTime ping) {
         var pong = LocalDateTime.now();
         return new PingPong(ping, pong);
     }

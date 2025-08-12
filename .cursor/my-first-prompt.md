@@ -1,0 +1,22 @@
+- Classes de constantes devem ser "final", com construtor privado usando anotações do lombok, os atributos devem ser publicos, estaticos e final:
+    - uma classe de constantes gerais da aplicação;
+    - uma classe de constantes com valores gerias para requests;
+    - uma classe de constante para erros;
+    - uma classe de constantes para trace;
+- Crie um arquivo Readmd.md para documentação do microserviço. Atualize o arquivo Readme.md da aplicação quando houver mudanças significativas.
+- O padrão do projeto será domain drive desing, crie pacotes e classes seguindo esse padrão.
+- O microserviço deve seguir a tecnica de API-First, utilizando um arquivo swagger para a documentação da API definido com modelo open-api.
+- O microserviço deve ser criado com maven e java 21, o framework será o Micronaut na sua versão mais recente.
+- O arquivo pom do maven deve ter variáveis com os valores das versões das dependencias. Configure os plugins necessários para usar o pitest, sonar e Micronaut.
+- As libs de teste serão junit e mockito nas versões mais recentes. Use testes de mutação, com pitest na versão mais recente, para avaliar a qualidade dos testes.
+- Avalie a qualidade do código com o sonar.  
+- Todas as classes devem ter construtores parametrizados, quando necessário, para injeção de depencias e devem utilizar a anotação do lombok para isso.
+- Utilize anotações do lombok para construtores, getters, setters, builders. Avalie qual a melhor entre elas em cada ocasião.
+- Utilize record quando possível.
+- Crie classes para ler variáveis de ambiente do microserviço, agrupe por contexto. Exemplo HttpClientConfig, DataBaseConfig, MessaginConfig, etc.
+- De preferencia a streams e labdas à estrturas de repetição.
+- Use os sufixos "ClientRequest" e "ClientResponse" para o nome das classes models usadas nas classes de chamadas laterais usando clientHttp.
+- Use o sufixo "Entity" para classes de entidades mapeadas de banco de dados.
+- Use Mapstructs para converter models.
+- Na criação dos testes unitários não coloque os mocks no método anotado com @Beforeache, crie mocks para cada cenário de testes.
+- Use 'var' para variáveis de escopo local.

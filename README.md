@@ -1,175 +1,177 @@
+[Português](README.pt-br.md) | [Español](README.es.md)
+
 # First AI Micronaut Project
 
-## 🚀 Sobre o Projeto
+## 🚀 About the Project
 
-Este é um projeto Micronaut desenvolvido **100% através de prompts de IA** usando o Cursor. **Nenhuma linha de código foi escrita manualmente** - todo o desenvolvimento foi realizado através de interações com IA, demonstrando o potencial da programação assistida por inteligência artificial.
+This is a Micronaut project developed **100% through AI prompts** using Cursor. **No line of code was written manually** - all development was done through interactions with AI, demonstrating the potential of AI-assisted programming.
 
-## 🎯 Objetivo
+## 🎯 Objective
 
-O projeto serve como um exemplo prático de como criar uma aplicação Micronaut completa usando apenas prompts de IA, seguindo as melhores práticas de desenvolvimento e qualidade de código.
+The project serves as a practical example of how to create a complete Micronaut application using only AI prompts, following best development practices and code quality standards.
 
-## 🏗️ Arquitetura
+## 🏗️ Architecture
 
-- **Framework**: Micronaut (última versão)
-- **Linguagem**: Java 21
+- **Framework**: Micronaut (latest version)
+- **Language**: Java 21
 - **Build Tool**: Maven
-- **Testes**: JUnit + Mockito + PITest (mutation testing)
-- **Qualidade**: SonarQube
-- **Padrão**: Domain Driven Design (DDD)
+- **Testing**: JUnit + Mockito + PITest (mutation testing)
+- **Quality**: SonarQube
+- **Pattern**: Domain Driven Design (DDD)
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 src/main/java/com/ai/
-├── controllers/          # Controladores REST
-├── services/            # Lógica de negócio
-├── model/              # Modelos de dados
-└── Application.java    # Classe principal
+├── controllers/          # REST Controllers
+├── services/            # Business logic
+├── model/              # Data models
+└── Application.java    # Main class
 ```
 
-## 📅 Linha de Tempo de Desenvolvimento
+## 📅 Development Timeline
 
-### 🗓️ 30/07/2025 - Início do Projeto
+### 🗓️ 07/30/2025 - Project Start
 
-#### 19:52 - 📋 Criação de Memory Bank e Regras
-- **Prompt**: [Criação de memory bank e regras](./docs/chats/cursor_cria_o_de_memory_bank_e_regras.md)
-- **Objetivo**: Estabelecer as regras e diretrizes de desenvolvimento
-- **Resultado**: Criação de documentação completa com:
-  - Regras de arquitetura DDD
-  - Padrões de código e naming conventions
-  - Diretrizes de teste (sem mocks em @BeforeEach)
-  - Configuração de ferramentas de qualidade
+#### 19:52 - 📋 Memory Bank and Rules Creation
+- **Prompt**: [Memory bank and rules creation](./docs/chats/cursor_cria_o_de_memory_bank_e_regras.md)
+- **Objective**: Establish development rules and guidelines
+- **Result**: Complete documentation creation with:
+  - DDD architecture rules
+  - Code patterns and naming conventions
+  - Testing guidelines (no mocks in @BeforeEach)
+  - Quality tools configuration
 
-#### 19:55 - 🔗 Criação do Endpoint Ping
-- **Prompt**: [Criar endpoint ping com método GET](./docs/chats/cursor_criar_endpoint_ping_com_m_todo_g.md)
-- **Objetivo**: Criar um endpoint básico de health check
-- **Resultado**: 
-  - Endpoint `/ping` retornando JSON com timestamp
-  - Implementação de resposta JSON com data/hora atual
-  - Estrutura básica do controller
+#### 19:55 - 🔗 Ping Endpoint Creation
+- **Prompt**: [Create ping endpoint with GET method](./docs/chats/cursor_criar_endpoint_ping_com_m_todo_g.md)
+- **Objective**: Create a basic health check endpoint
+- **Result**: 
+  - `/ping` endpoint returning JSON with timestamp
+  - JSON response implementation with current date/time
+  - Basic controller structure
 
-#### 20:28 - 📦 Organização de Pacotes
-- **Prompt**: [Criar pacote services em com.ia](./docs/chats/cursor_criar_pacote_services_em_com_ia.md)
-- **Objetivo**: Organizar a estrutura do projeto seguindo DDD
-- **Resultado**:
-  - Criação do pacote `services`
-  - Movimentação do controller para pacote `controllers`
-  - Estrutura organizada seguindo padrões DDD
+#### 20:28 - 📦 Package Organization
+- **Prompt**: [Create services package in com.ia](./docs/chats/cursor_criar_pacote_services_em_com_ia.md)
+- **Objective**: Organize project structure following DDD
+- **Result**:
+  - Creation of `services` package
+  - Moving controller to `controllers` package
+  - Organized structure following DDD patterns
 
-### 🗓️ 04/08/2025 - Desenvolvimento de Testes
+### 🗓️ 08/04/2025 - Test Development
 
-#### 20:50 - 🧪 Criação de Testes Unitários
-- **Prompt**: [Criação de testes unitários e mocks](./docs/chats/cursor_cria_o_de_testes_unit_rios_e_moc.md)
-- **Objetivo**: Implementar cobertura de testes completa
-- **Resultado**:
-  - Testes unitários para services e controllers
-  - Mocks individuais por cenário de teste
-  - Configuração de JUnit e Mockito
-  - Seguindo a regra: **sem mocks em @BeforeEach**
+#### 20:50 - 🧪 Unit Test Creation
+- **Prompt**: [Unit test and mocks creation](./docs/chats/cursor_cria_o_de_testes_unit_rios_e_moc.md)
+- **Objective**: Implement complete test coverage
+- **Result**:
+  - Unit tests for services and controllers
+  - Individual mocks per test scenario
+  - JUnit and Mockito configuration
+  - Following the rule: **no mocks in @BeforeEach**
 
-#### 21:02 - 🔍 Análise de Qualidade com SonarQube
-- **Prompt**: [Executar análise do sonar para qualidade de código](./docs/chats/cursor_executar_an_lise_do_sonar_para_q.md)
-- **Objetivo**: Configurar análise de qualidade de código
-- **Resultado**:
-  - Configuração do plugin SonarQube no Maven
-  - Análise de qualidade de código
-  - Relatórios de cobertura e qualidade
+#### 21:02 - 🔍 Quality Analysis with SonarQube
+- **Prompt**: [Run Sonar analysis for code quality](./docs/chats/cursor_executar_an_lise_do_sonar_para_q.md)
+- **Objective**: Configure code quality analysis
+- **Result**:
+  - SonarQube plugin configuration in Maven
+  - Code quality analysis
+  - Coverage and quality reports
 
-### 🗓️ 05/08/2025 - Testes de Mutação
+### 🗓️ 08/05/2025 - Mutation Testing
 
-#### 19:36 - 🧬 Análise de Qualidade de Testes com PITest
-- **Prompt**: [Análise de qualidade de testes com pitest](./docs/chats/cursor_an_lise_de_qualidade_de_testes_c.md)
-- **Objetivo**: Implementar testes de mutação para validar qualidade dos testes
-- **Resultado**:
-  - Configuração do PITest no Maven
-  - Execução de testes de mutação
-  - Relatórios de cobertura de mutação
-  - Validação da robustez dos testes unitários
+#### 19:36 - 🧬 Test Quality Analysis with PITest
+- **Prompt**: [Test quality analysis with pitest](./docs/chats/cursor_an_lise_de_qualidade_de_testes_c.md)
+- **Objective**: Implement mutation testing to validate test quality
+- **Result**:
+  - PITest configuration in Maven
+  - Mutation test execution
+  - Mutation coverage reports
+  - Unit test robustness validation
 
-## 🔧 Funcionalidades Implementadas
+## 🔧 Implemented Features
 
-### ✅ Endpoints REST
-- `GET /first-ai-micronaut-project/` - Endpoint básico
-- `GET /first-ai-micronaut-project/ping` - Health check com timestamp
+### ✅ REST Endpoints
+- `GET /first-ai-micronaut-project/` - Basic endpoint
+- `GET /first-ai-micronaut-project/ping` - Health check with timestamp
 
-### ✅ Estrutura de Código
-- Organização DDD com pacotes separados
-- Services com lógica de negócio
-- Controllers REST
-- Modelos de dados
+### ✅ Code Structure
+- DDD organization with separate packages
+- Services with business logic
+- REST Controllers
+- Data models
 
-### ✅ Qualidade e Testes
-- Testes unitários com JUnit + Mockito
-- Testes de mutação com PITest
-- Análise de qualidade com SonarQube
-- Cobertura de código
+### ✅ Quality and Testing
+- Unit tests with JUnit + Mockito
+- Mutation testing with PITest
+- Quality analysis with SonarQube
+- Code coverage
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
-### Pré-requisitos
+### Prerequisites
 - Java 21
 - Maven 3.8+
 
-### Execução
+### Execution
 ```bash
-# Compilar e executar
+# Compile and run
 mvn clean compile exec:java
 
-# Executar testes
+# Run tests
 mvn test
 
-# Executar análise SonarQube
+# Run SonarQube analysis
 mvn sonar:sonar
 
-# Executar testes de mutação
+# Run mutation tests
 mvn org.pitest:pitest-maven:mutationCoverage
 ```
 
-## 📊 Métricas de Qualidade
+## 📊 Quality Metrics
 
-- **Cobertura de Testes**: Configurada com PITest
-- **Qualidade de Código**: Monitorada com SonarQube
-- **Padrões**: Seguindo DDD e melhores práticas
-- **Documentação**: Completa com regras de desenvolvimento
+- **Test Coverage**: Configured with PITest
+- **Code Quality**: Monitored with SonarQube
+- **Standards**: Following DDD and best practices
+- **Documentation**: Complete with development rules
 
-## 🎯 Destaques do Desenvolvimento
+## 🎯 Development Highlights
 
-### 🤖 100% IA-Generated
-- **Nenhuma linha de código escrita manualmente**
-- Todo o desenvolvimento através de prompts
-- Demonstração do potencial da programação assistida por IA
+### 🤖 100% AI-Generated
+- **No line of code written manually**
+- All development through prompts
+- Demonstration of AI-assisted programming potential
 
-### 📋 Regras Estabelecidas
-- **Testes**: Sem mocks em @BeforeEach
-- **Constantes**: Classes final com Lombok
-- **Naming**: Convenções específicas por tipo
-- **Arquitetura**: DDD com separação clara de responsabilidades
+### 📋 Established Rules
+- **Tests**: No mocks in @BeforeEach
+- **Constants**: Final classes with Lombok
+- **Naming**: Specific conventions by type
+- **Architecture**: DDD with clear separation of responsibilities
 
-### 🔧 Ferramentas Integradas
-- **SonarQube**: Análise de qualidade
-- **PITest**: Testes de mutação
-- **JUnit + Mockito**: Testes unitários
-- **Maven**: Build e gerenciamento de dependências
+### 🔧 Integrated Tools
+- **SonarQube**: Quality analysis
+- **PITest**: Mutation testing
+- **JUnit + Mockito**: Unit tests
+- **Maven**: Build and dependency management
 
-## 📚 Documentação Adicional
+## 📚 Additional Documentation
 
-- [Regras de Desenvolvimento](./docs/development-rules/) - Diretrizes completas
-- [Testes](./TESTES.md) - Documentação específica de testes
-- [Chats de Desenvolvimento](./docs/chats/) - Histórico completo dos prompts
+- [Development Rules](./docs/development-rules/) - Complete guidelines
+- [Tests](./TESTES.md) - Specific test documentation
+- [Development Chats](./docs/chats/) - Complete prompt history
 
-## 🔗 Links dos Prompts
+## 🔗 Prompt Links
 
-1. [📋 Memory Bank e Regras](./docs/chats/cursor_cria_o_de_memory_bank_e_regras.md)
-2. [🔗 Endpoint Ping](./docs/chats/cursor_criar_endpoint_ping_com_m_todo_g.md)
-3. [📦 Organização de Pacotes](./docs/chats/cursor_criar_pacote_services_em_com_ia.md)
-4. [🧪 Testes Unitários](./docs/chats/cursor_cria_o_de_testes_unit_rios_e_moc.md)
-5. [🔍 Análise SonarQube](./docs/chats/cursor_executar_an_lise_do_sonar_para_q.md)
-6. [🧬 Testes de Mutação](./docs/chats/cursor_an_lise_de_qualidade_de_testes_c.md)
+1. [📋 Memory Bank and Rules](./docs/chats/cursor_cria_o_de_memory_bank_e_regras.md)
+2. [🔗 Ping Endpoint](./docs/chats/cursor_criar_endpoint_ping_com_m_todo_g.md)
+3. [📦 Package Organization](./docs/chats/cursor_criar_pacote_services_em_com_ia.md)
+4. [🧪 Unit Tests](./docs/chats/cursor_cria_o_de_testes_unit_rios_e_moc.md)
+5. [🔍 SonarQube Analysis](./docs/chats/cursor_executar_an_lise_do_sonar_para_q.md)
+6. [🧬 Mutation Tests](./docs/chats/cursor_an_lise_de_qualidade_de_testes_c.md)
 
-## 🎉 Conclusão
+## 🎉 Conclusion
 
-Este projeto demonstra como é possível criar uma aplicação Micronaut completa e robusta usando apenas prompts de IA, seguindo as melhores práticas de desenvolvimento e mantendo alta qualidade de código. A linha de tempo mostra a evolução natural do projeto, desde a definição de regras até a implementação de testes avançados.
+This project demonstrates how it's possible to create a complete and robust Micronaut application using only AI prompts, following best development practices and maintaining high code quality. The timeline shows the natural evolution of the project, from rule definition to advanced test implementation.
 
 ---
 
-**💡 Projeto desenvolvido 100% com IA - Nenhuma linha de código escrita manualmente** 
+**💡 Project developed 100% with AI - No line of code written manually**
